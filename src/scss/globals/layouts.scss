@@ -1,0 +1,22 @@
+@use "../utils" as *;
+
+.container {
+  padding: rem(12);
+  @include breakpoint(medium) {
+    padding: rem(32) rem(20);
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  // flex-grow: 2;
+}
+
+// .text__wrapper {
+//   @include breakpoint(medium) {
+//     margin-top: rem(136);
+//   }
+// }

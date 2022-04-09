@@ -1,0 +1,2 @@
+"use strict";var hamburger=document.querySelector(".header__icon"),menu=document.querySelector(".menu"),close_icon=document.querySelector(".menu__icon");hamburger.addEventListener("click",(function(){menu.classList.toggle("menu--active")})),close_icon.addEventListener("click",(function(){menu.classList.toggle("menu--active")}));
+//# sourceMappingURL=main.js.map

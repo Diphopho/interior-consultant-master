@@ -1,0 +1,26 @@
+// @use "../utils/colors";
+// @use "../utils/layouts";
+@use "../utils" as *;
+@forward "menu";
+
+.header {
+  // width: 100%;
+  // max-width: rem(375);
+  max-height: rem(50);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  &__icon {
+    @include breakpoint(medium) {
+      display: none !important;
+    }
+  }
+}
+
+.logo {
+  border: solid 1px var(--white);
+  padding: rem(8);
+  width: rem(130);
+  height: rem(32);
+}

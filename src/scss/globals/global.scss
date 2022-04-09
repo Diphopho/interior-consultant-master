@@ -1,0 +1,20 @@
+@forward "colors";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+body {
+  background-color: var(--bg_color);
+  max-height: 100vh;
+  // padding: 12px;
+}
+
+a {
+  text-decoration: none;
+}

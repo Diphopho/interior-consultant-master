@@ -1,0 +1,41 @@
+@use "../utils" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: rem(13.17) rem(22.68) rem(25);
+  max-height: rem(138);
+  max-width: rem(300);
+  box-shadow: 0px rem(4) rem(4) 0px var(--box_shadow);
+  background-color: var(--bg_color);
+  align-self: center;
+  position: absolute;
+  bottom: -3.5rem;
+  z-index: 1000;
+  gap: rem(21.9);
+  @include breakpoint(medium) {
+    bottom: -5rem;
+    right: 1.8rem;
+  }
+  &__header {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: rem(36);
+    align-items: center;
+  }
+  &__title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  &__photo {
+    width: rem(36);
+    height: rem(36);
+    border-radius: 50%;
+  }
+  &__main {
+    width: rem(210);
+  }
+}

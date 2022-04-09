@@ -1,0 +1,27 @@
+@use "../utils" as *;
+@forward "card";
+
+.main {
+  width: 100%;
+  max-height: rem(586);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: rem(25);
+  @include breakpoint(medium) {
+    flex-direction: row;
+    align-items: center;
+    margin-top: rem(100);
+  }
+
+  &__link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(15);
+  }
+
+  &__image {
+    width: 100%;
+  }
+}
